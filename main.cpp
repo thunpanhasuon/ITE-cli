@@ -7,6 +7,9 @@ extern "C" {
 
 int 
 main(void) {
-  std::cout << "Hello, World! from C++" ;
+  std::cout << "Hello, World! from C++" << std::endl;
+  /* zig function */
+  connect();
+
   return 0;
 }

@@ -1,26 +1,15 @@
-CXX := g++
-CXXFLAGS := -Wall -Wextra -std=c++20
+ZIG ?= zig
 
-SRC_DIR := src
-BUILD_DIR := build
-
-SRC := $(wildcard $(SRC_DIR)/*.cpp)
-OBJ := $(patsubst $(SRC_DIR)/%.cpp,%.o,$(SRC))
-
-TARGET := $(BUILD_DIR)/app
+TARGET := zig-out/bin/utils
 
 all: $(TARGET)
 
-$(TARGET): $(OBJ)
-	mkdir -p $(BUILD_DIR)
-	$(CXX) $(OBJ) -o $@
-
-%.o: $(SRC_DIR)/%.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+$(TARGET): build.zig build.zig.zon main.cpp src/utils.zig
+	$(ZIG) build
 
 clean:
 	rm -f *.o
-	rm -rf $(BUILD_DIR)
+	rm -rf build .zig-cache zig-out
 
 run: all
 	./$(TARGET)

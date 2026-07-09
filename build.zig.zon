@@ -73,6 +73,7 @@
     .paths = .{
         "build.zig",
         "build.zig.zon",
+        "main.cpp",
         "src",
         // For example...
         //"LICENSE",
