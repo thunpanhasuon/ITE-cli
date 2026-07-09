@@ -4,7 +4,7 @@ TARGET := zig-out/bin/utils
 
 all: $(TARGET)
 
-$(TARGET): build.zig build.zig.zon main.cpp src/utils.zig
+$(TARGET): build.zig build.zig.zon src/main.zig src/utils.zig src/hello.cpp src/data.json
 	$(ZIG) build
 
 clean:

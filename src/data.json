@@ -1,0 +1,12 @@
+{
+  "name": "John Doe",
+  "age": 30,
+  "isEmployee": true,
+  "hobbies": ["reading", "cycling", "cooking"],
+  "address": {
+    "city": "New York",
+    "zipCode": "10001"
+  },
+  "bonus": null
+}
+
