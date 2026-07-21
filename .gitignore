@@ -1,3 +1,6 @@
 .zig-cache/
+.zig-global-cache/
 zig-out/
-
+.DS_Store
+.classmgr_token
+.classmgr_admin_key

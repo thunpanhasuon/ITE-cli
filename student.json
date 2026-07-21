@@ -1,0 +1,9 @@
+{
+  "studentId": "ITE-001",
+  "firstName": "Alice",
+  "lastName": "Nguyen",
+  "ite": "ITE-101",
+  "iteEmail": "alice@ite.edu",
+  "iteUsername": "alice",
+  "itePassword": "password123"
+}
